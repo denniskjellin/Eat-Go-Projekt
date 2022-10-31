@@ -1,0 +1,39 @@
+{
+    "name": "moment1_4_vt22-denniskjellin",
+    "version": "1.0.0",
+    "description": "Syftet med moment - 1 uppgiften är att jag ska lära mig använda NodeJs på klient-sidan, lära mig att automatisera uppgifter för att förenkla utvecklingsarbetet av en webbplats.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Webbutvecklings-programmet/moment1_4_vt22-denniskjellin.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Webbutvecklings-programmet/moment1_4_vt22-denniskjellin/issues"
+    },
+    "homepage": "https://github.com/Webbutvecklings-programmet/moment1_4_vt22-denniskjellin#readme",
+    "devDependencies": {
+        "@babel/core": "^7.17.9",
+        "@babel/preset-env": "^7.16.11",
+        "browser-sync": "^2.27.9",
+        "gulp": "^4.0.2",
+        "gulp-babel": "^8.0.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-imagemin": "^7.1.0",
+        "gulp-sass": "^5.1.0",
+        "gulp-uglify-es": "^3.0.0",
+        "node-sass": "^7.0.1",
+        "sass": "^1.49.11",
+        "typescript": "^4.6.3"
+    },
+    "dependencies": {
+        "gulp-sourcemaps": "^3.0.0",
+        "gulp-typescript": "^6.0.0-alpha.1",
+        "gulp-uglifycss": "^1.1.0"
+    }
+}

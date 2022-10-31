@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project created for school, by Dennis Kjellin">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <meta name="author" content="Dennis Kjellin, dekj2100@student.miun.se">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Eat & Go - Lunchmeny</title>
+</head>
+
+<body>
+    <header>
+        <!--logo container-->
+        <a href="index.html">
+            <img src="./images/eatandgo.svg" class="logo" alt="back to home">
+        </a>
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <!--navbar container-->
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">hem</a></li>
+                <li><a href="lunchmeny.html">lunchmeny</a></li>
+                <li><a href="boka.html">boka</a></li>
+                <li><a href="#">take away</a></li>
+                <li><a href="kontakt.html">kontakt</a></li>
+                <li><a href="foretaget.html">om oss</a></li>
+            </ul>
+        </nav>
+        <!--toggle navbar span/label-->
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </header>
+
+    <!--content-->
+    <main>
+        <!--container for background img and site presentation-->
+        <div class="bg-img-1 pb-5 pt-5">
+            <div class="container mt-5 pt-2">
+                <div class="row justify-center">
+                    <div class="col-12-xs col-5-md ml-1 mr-1">
+                        <h1 class="font-xxl t-center text-white">Lunchmeny</h1>
+                        <div id="week-writeout">
+                            <!--Here goes a H2 title which is printing out current week-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--section block, green highlighting part of the page-->
+        <section class="bg-secondary-light-7 mt-0 pt-2 pb-2">
+            <div class="container">
+                <h2 class="font-xl">Världens smaker</h2>
+                <p class="text-black mt-1 mb-1">Vi tycker inte att det ska vara krångligt att få upptäcka nya fantastiska smaker. Därför har vi samlat världen på en tallrik för just din skull.<br><br>Låt dig inspireras av smaker från alla världens olika kök på en och samma plats, välkommen
+                    in till oss och tillåt dig själv att njuta en stund.</p>
+                <p class="font-md text-black mt-1 mb-1">Gott för hela familjen - <span class="font-lg text-secondary-dark-3">Eat & Go!</span></p>
+            </div>
+        </section>
+
+        <!--container for the menu-->
+        <div class="pt-3 pb-3 bg-img-2">
+            <div class="container">
+                <div class="row justify-center">
+                    <div class="card pr-5 pl-5 card-h t-center" id="writeout">
+
+                        <!-- here the menu gets published-->
+
+                    </div>
+                    <!--button, on click it takes you to previous visited page-->
+                    <div class="container">
+                        <div class="row justify-center">
+                            <div class="mt-3">
+                                <!--Button that takes you to the page you came from-->
+                                <button onclick="history.back()" class="btn-outlined-secondary font-md text-secondary-dark-4 text-hover-white">Tillbaka</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- footer-->
+    <footer>
+        <div class="footer-container bg-secondary-dark-5">
+            <div class="footer bg-secondary-dark-5">
+                <div class="footer-heading footer-1">
+                    <h2>Kundtjänst</h2>
+                    <a href="kontakt.html">Kontakt</a>
+                    <a href="foretaget.html">Om oss</a>
+
+
+                </div>
+                <div class="footer-heading footer-2">
+                    <h2>Sidor</h2>
+                    <a href="index.html">Hem</a>
+                    <a href="lunchmeny.html">Lunchmeny</a>
+                    <a href="boka.html">Boka</a>
+
+
+                </div>
+                <div class="footer-heading footer-3">
+                    <h2>Hitta hit</h2>
+                    <address class="pt-0 pb-0">
+                        <a class="text-white"
+                            href="https://www.eniro.se/mittuniversitetet%2c+sundsvall+sundsvall/32330803/firma">Norra
+                            Norra Vägen 13<br>
+                            Box 132, Sundsvall<br></a>
+                    </address>
+                </div>
+                <div class="footer-email-form">
+                    <h2>Nyhetsbrev</h2>
+                    <form>
+                        <label class="display-none" for="footer-email">x</label>
+                        <input type="email" placeholder="Din e-postadress" id="footer-email">
+                        <input type="submit" value="OK" id="footer-email-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--my javascript file-->
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+//contact form settings and containers
+.form {
+    /* Style inputs with type="text", select elements and textareas */
+    input[type=text],
+    input[type=email],
+    select,
+    textarea {
+        width: 100%;
+        /* Full width */
+        padding: .8rem;
+        /* Some padding */
+        border: 1px solid #ccc;
+        /* Gray border */
+        border-radius: 4px;
+        /* Rounded borders */
+        box-sizing: border-box;
+        /* Make sure that padding and width stays in place */
+        margin-top: .5rem;
+        /* Add a top margin */
+        margin-bottom: 1rem;
+        /* Bottom margin */
+        resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+}
+
+//extension of form styling
+//.form-contact {
+// @extend .form;
+//}
+//extension of form styling
+// Custom styling for booking form starts here
+// banner thats groups content
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+//container for the img in the form
+.card-container {
+    display: grid;
+    grid-template-columns: 420px 420px;
+}
+
+// class for the img in the form
+.card-img {
+    background: url("../images/backg.webp") center/cover no-repeat;
+}
+
+// background for the form nad height.
+.card-content {
+    background: white;
+    height: 21.5rem;
+}
+
+// styling of the title in the form
+.card-content h3 {
+    text-align: center;
+    padding: 25px 0 10px 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+// width and display selection of form-row
+.form-row {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+// styling of the different inputs in the for, class name given book-form.
+.book-form select,
+.book-form input {
+    display: block;
+    width: 100%;
+    margin: 1rem .8rem;
+    padding: 5px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-weight: 300;
+}
+
+.book-form input,
+.book-form input::placeholder,
+select {
+    color: #5f5f5f;
+}
+
+.book-form input [type=date] {
+    color: #9a9a9a;
+}
+
+.book-form input[type=submit] {
+    color: #fff;
+    background-color: #097a51;
+    padding: 10px 0px;
+    width: 13rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.book-form input[type=submit]:hover {
+    opacity: 0.9;
+}
+
+// making the form scale the way I want on smaler screens
+@media(max-width: 992px) {
+    .card-container {
+        grid-template-columns: 100%;
+    }
+    .card-img {
+        height: 330px;
+    }
+} // webkit to disable that you get "zoomed in/sucked in" into the form when entering a input on mobile
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select:focus,
+    textarea:focus,
+    input:focus {
+        font-size: 0.8rem;
+    }
+}

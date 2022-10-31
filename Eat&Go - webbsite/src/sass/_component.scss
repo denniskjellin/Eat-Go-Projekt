@@ -1,0 +1,69 @@
+/* Special styling classes*/
+
+// center img
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+// extension of img-center, smaler image
+.img-center-md {
+    @extend .img-center;
+    width: 40%;
+}
+
+// background-img class
+.bg-img-base {
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center;
+}
+
+//creating extension of bg img class
+.bg-img-1 {
+    @extend .bg-img-base;
+    background-image: url("../images/backg.webp");
+}
+
+.bg-img-2 {
+    @extend .bg-img-base;
+    background-image: url("../images/backg2.webp");
+}
+
+// text align center for specific elements
+.t-center {
+    text-align: center;
+}
+
+// customize bold text
+.bold {
+    font-weight: bold;
+    opacity: 95%;
+}
+
+//Border bottom to certain elements
+.underline {
+    border-bottom: solid 2px white;
+}
+
+.overline-grey {
+    border-top: solid 2px rgb(190, 190, 190);
+}
+
+//class to cancel out certain opacity
+.opacity-0 {
+    opacity: 100%;
+}
+
+.display-none {
+    display: none;
+}
+
+// hide elements on mobile screen
+@media screen and (max-width: 767px) {
+    .mob-none {
+        display: none;
+    }
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Project created for school, by Dennis Kjellin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <meta name="author" content="Dennis Kjellin, dekj2100@student.miun.se">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Eat & Go - Boka</title>
+</head>
+
+<body>
+    <header>
+        <!--logotype-->
+        <a href="index.html">
+            <img src="./images/eatandgo.svg" class="logo" alt="back to home">
+        </a>
+        <!--navbar-->
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">hem</a></li>
+                <li><a href="lunchmeny.html">lunchmeny</a></li>
+                <li><a href="index.html">boka</a></li>
+                <li><a href="#">take away</a></li>
+                <li><a href="kontakt.html">kontakt</a></li>
+                <li><a href="foretaget.html">om oss</a></li>
+            </ul>
+        </nav>
+        <!--span for toggling navbar-->
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </header>
+
+
+    <!--content-->
+    <main>
+        <div class="bg-img-2 pb-1">
+
+            <div class="container mt-5 pt-2">
+                <div class="row justify-center">
+                    <!--container with grid settings-->
+                    <div class="col-12-xs col-5-md ml-1 mr-1 mb-5">
+                        <!--banner for booking container-->
+                        <section class="banner">
+                            <!--main title, class is styling the text-->
+                            <h1 class="text-secondary-dark-3 font-xl pb-1">Boka Bord</h1>
+                            <h2 class="text-black font-lg pb-1 mb-1">- fyll i dina uppgifter</h2>
+                            <!--container that has image set to it through SASS/CSS-->
+                            <div class="card-container">
+                                <div class="card-img br-xs">
+                                    <!--img here-->
+                                </div>
+                                <!--content of the booking form-->
+                                <div class="card-content br-xs">
+                                    <h3 class="text-black">Reservera</h3>
+                                    <form class="book-form" name="resForm" id="resForm">
+                                        <div class="form-row">
+                                            <label for="date" class="display-none">x</label>
+                                            <input type="date" id="date" name="date" onfocus="(this.type='date')">
+                                            <label for="time" class="display-none">x</label>
+                                            <input type="time" id="time" name="time">
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="name" class="display-none">x</label>
+                                            <input type="text" id="name" placeholder="Namn">
+                                            <label for="phonenum" class="display-none">x</label>
+                                            <input type="text" id="phonenum" placeholder="Telefon nummer">
+                                        </div>
+                                        <div class="form-row">
+                                            <label for="persons" class="display-none">x</label>
+                                            <input type="number" id="persons" placeholder="Antal personer" min="1" max="100">
+
+                                            <input type="submit" value="Boka" id="submit">
+                                        </div>
+                                        <div>
+                                            <section id="error">
+                                                <h2 class="display-none">x</h2>
+
+                                            </section>
+                                            <section id="success">
+                                                <h2 class="display-none">x</h2>
+                                            </section>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <!--section block, green highlighting part of the page-->
+            <!--class is setting styling to the section below-->
+            <section class="bg-secondary-light-7 mb-5 pt-4 pb-4">
+                <div class="container ">
+                    <h2 class="font-xl">Information</h2>
+                    <p class="text-black mt-1 mb-1">Vad kul att du vill boka bord hos oss! I vår restaurang får det plats många personer, borsbokning är dock bra att göra om man kommer ett större sällskap, så kan vi enkelt reservera och ställa ordning bord så ni får njuta av lunchen
+                        tillsammans!
+                    </p>
+                    <p class="text-black mt-1 mb-1">Om du inte har bokat bord och vill äta lunch hos oss, så går det alldeles utmärkt att bara dyka upp som du är!</p>
+                    <p class="text-black mt-1 mb-1">*Vid reservering så godkänner du att vi lagrar nödvändiga personuppgifter för att utföra din reservering.</p>
+                </div>
+            </section>
+            <!--button, on click it takes you to previous visited page-->
+            <div class="mt-2 mb-2 row justify-center">
+                <button onclick="history.back()" class="btn-outlined-secondary font-md text-secondary-dark-4 text-hover-white">Tillbaka</button>
+            </div>
+        </div>
+
+    </main>
+    <!-- footer-->
+    <footer>
+        <div class="footer-container bg-secondary-dark-5">
+            <div class="footer bg-secondary-dark-5">
+                <div class="footer-heading footer-1">
+                    <h2>Kundtjänst</h2>
+                    <a href="kontakt.html">Kontakt</a>
+                    <a href="foretaget.html">Om oss</a>
+
+
+                </div>
+                <div class="footer-heading footer-2">
+                    <h2>Sidor</h2>
+                    <a href="index.html">Hem</a>
+                    <a href="lunchmeny.html">Lunchmeny</a>
+                    <a href="boka.html">Boka</a>
+
+
+                </div>
+                <div class="footer-heading footer-3">
+                    <h2>Hitta hit</h2>
+                    <address class="pt-0 pb-0">
+                        <a class="text-white"
+                            href="https://www.eniro.se/mittuniversitetet%2c+sundsvall+sundsvall/32330803/firma">Norra
+                            Norra Vägen 13<br>
+                            Box 132, Sundsvall<br></a>
+                    </address>
+                </div>
+                <div class="footer-email-form">
+                    <h2>Nyhetsbrev</h2>
+                    <form>
+                        <label class="display-none" for="footer-email">x</label>
+                        <input type="email" placeholder="Din e-postadress" id="footer-email">
+                        <input type="submit" value="OK" id="footer-email-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--my javascript file-->
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

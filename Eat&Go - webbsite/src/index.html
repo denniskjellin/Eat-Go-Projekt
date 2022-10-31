@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project created for school, by Dennis Kjellin">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <meta name="author" content="Dennis Kjellin, dekj2100@student.miun.se">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Eat & Go - Din mat påvägen.</title>
+</head>
+
+<body>
+    <header>
+        <!--logotype container-->
+        <a href="index.html">
+            <img src="./images/eatandgo.svg" class="logo" alt="back to home">
+        </a>
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <!--main nav-->
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">hem</a></li>
+                <li><a href="lunchmeny.html">lunchmeny</a></li>
+                <li><a href="boka.html">boka</a></li>
+                <li><a href="#">take away</a></li>
+                <li><a href="kontakt.html">kontakt</a></li>
+                <li><a href="foretaget.html">om oss</a></li>
+            </ul>
+        </nav>
+        <!--span for toggling navbar-->
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </header>
+
+
+    <!--content-->
+    <main>
+        <!--div with background img below-->
+        <div class="bg-img-1 pb-1">
+            <!--containers with grid settings, padding and margins etc-->
+            <div class="container mt-5 pt-2">
+                <div class="row justify-center">
+                    <div class="col-12-xs col-5-md ml-1 mr-1">
+                        <section class="card pl-1 pr-1 mt-2 mb-2 opacity">
+                            <h1 class="font-xl text-secondary-dark-3">Välkommen!</h1>
+                            <h2 class="font-xl">- Eat & Go</h2>
+                            <p class="text-black mt-1 mb-1">
+                                Boka bord på en av Sundsvalls mest eftertraktade lunchrestauranger!</p>
+                            <p class="text-black mt-1 mb-1">Vi erbjuder dig en smakfull upplevelse med ett flertal olika alternativ att välja mellan.
+                            </p>
+                            <p class="text-black mt-1 mb-1">Vi serverar varje dag mellan <strong>10:00-15:00</strong></p>
+                            <p class="text-black mt-1 mb-1">
+                                Hos oss är du alltid välkommen, men för större sällskap rekommenderar vi förtidsbokning så att alla får plats!
+                            </p>
+                            <a href="boka.html" class="btn-outlined-secondary text-secondary-dark-4 text-hover-white">Boka Bord</a>
+                        </section>
+                    </div>
+                    <div class="col-12-xs col-5-md ml-1 mr-1">
+                        <section class="card pl-1 pr-1 mt-2 mb-2 opacity">
+
+                            <h2 class="font-xl text-secondary-dark-3">Ny meny</h2>
+                            <h2 class="font-xl">- Varje vecka</h2>
+
+                            <p class="text-black mt-1 mb-1">En varierad kost är en bra kost brukar man säga, att få uppleva nya smaker från alla världens håll och kanter är inte bara spännande utan väldigt gott också!
+                            </p>
+                            <p class="text-black mt-1 mb-1">Därför varierar vår meny från vecka till vecka, där vi presenterar nya spännande rätter men även reserverar plats för rätter som vi har märkt att besökarna uppskattar sådär lite extra.</p>
+                            <p class="text-black mt-1 mb-1">Vi på Eat & Go vill att alla i familjen ska kunna hitta något dom blir mättta på hos oss, därför har vi alltid flera olika rätter, samt alltid minst en vegansk rätt - varje dag!</p>
+                            <a href="lunchmeny.html" class="btn-outlined-secondary text-secondary-dark-4 text-hover-white mt-1 mb-1">Veckans Meny</a>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--highlighted section, green background that pops and highlights the content-->
+        <section class="bg-secondary-light-7 mt-0 pt-4 pb-4">
+            <div class="container ">
+                <h2 class="font-xl">Klimatpositiv</h2>
+                <p class="text-black mt-1 mb-1">Vi har under många år arbetat målmedvetet med att minska vår klimatpåverkan och klimatkompensera för den påverkan vi har. Eftersom vi är en del av problemet ska vi även vara en del av lösningen. Från den 14 juni 2018 är hela vår meny klimatpositiv.
+                    Vi vill värna om en grönare framtid för oss och våra nästkommande.</p>
+                <p class="text-black mt-1 mb-1">Tack för att just du äter hos oss & väljer ett klimatpositivt alternativ.</p>
+            </div>
+        </section>
+        <!--card section, customized clickable cards to direct you to different html pages-->
+        <section class="pt-3 pb-3 bg-img-2">
+            <div class="container">
+                <div class="row gap-2">
+                    <div class="col-12-xs col-6-md col-4-lg">
+                        <a href="boka.html">
+                            <h3 class="font-xl text-secondary-dark-3">Boka Bord</h3>
+                            <h3 class="font-lg text-black mb-1">- Reservera</h3>
+                            <div class="card p-0 card-h">
+                                <img src="./images/book.svg" class="img-center card-block-img" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12-xs col-6-md col-4-lg">
+                        <a href="#">
+                            <h3 class="font-xl text-secondary-dark-3">Take Away</h3>
+                            <h3 class="font-lg text-black mb-1">- Se alternativ</h3>
+                            <div class="card p-0 card-h">
+                                <img src="./images/takeaway.svg" class="img-center card-block-img" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12-xs col-6-md col-4-lg">
+                        <a href="kontakt.html">
+                            <h3 class="font-xl text-secondary-dark-3">Kontakt</h3>
+                            <h3 class="font-lg text-black mb-1">- Ställ din fråga</h3>
+                            <div class="card p-0 card-h">
+                                <img src="./images/contact.svg" class="img-center card-block-img" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <!-- footer-->
+    <footer>
+        <div class="footer-container bg-secondary-dark-5">
+            <div class="footer bg-secondary-dark-5">
+                <div class="footer-heading footer-1">
+                    <h2>Kundtjänst</h2>
+                    <a href="kontakt.html">Kontakt</a>
+                    <a href="foretaget.html">Om oss</a>
+
+
+                </div>
+                <div class="footer-heading footer-2">
+                    <h2>Sidor</h2>
+                    <a href="index.html">Hem</a>
+                    <a href="lunchmeny.html">Lunchmeny</a>
+                    <a href="boka.html">Boka</a>
+
+
+                </div>
+                <div class="footer-heading footer-3">
+                    <h2>Hitta hit</h2>
+                    <address class="pt-0 pb-0">
+                        <a class="text-white"
+                            href="https://www.eniro.se/mittuniversitetet%2c+sundsvall+sundsvall/32330803/firma">Norra
+                            Norra Vägen 13<br>
+                            Box 132, Sundsvall<br></a>
+                    </address>
+                </div>
+                <div class="footer-email-form">
+                    <h2>Nyhetsbrev</h2>
+                    <form>
+                        <label class="display-none" for="footer-email">x</label>
+                        <input type="email" placeholder="Din e-postadress" id="footer-email">
+                        <input type="submit" value="OK" id="footer-email-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--my javascript file-->
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

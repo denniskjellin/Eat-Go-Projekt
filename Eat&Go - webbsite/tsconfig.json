@@ -1,0 +1,10 @@
+{
+    "include": [
+        "src/typescript/*.ts"
+, "src/typescript/navbar_module.ts"    ],
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "target": "es6",
+        "module" : "es2015"
+    }
+}
