@@ -2,6 +2,9 @@
 av Dennis Kjellin, dekj2100@student.miun.se
 Projektuppgift för kursen Webbutveckling III, Mittunivesitetet Sundsvall.
 
+## Live version
+https://eatandgo.netlify.app/
+
 ## Info om webbtjänsten
 Denna webbtjänst har jag sammanställt för projektet i Webbutveckling III. Jag valde att skapa en restaurang som ska figurera som ett lunchställe som har en ny meny för varje vecka. Här ska det gå att se menyn för aktuell vecka samt att boka bord och på något vis kunna kontakta restaurangen. 
 Länk till front-end sidan: http://studenter.miun.se/~dekj2100/Eat&Go/index.html
